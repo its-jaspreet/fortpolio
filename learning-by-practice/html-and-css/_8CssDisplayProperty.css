@@ -1,0 +1,123 @@
+.sign-up-form {
+    display: inline-block;
+    box-shadow: 1px 1px 10px rgb(194, 223, 252);
+    box-shadow: -0.5px -0.5px 10px rgb(194, 223, 252);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.sign-up-form input {
+    border-color: gray;
+    border-style: solid;
+    outline: none;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.sign-up-form input:focus {
+    background-color: gainsboro;
+    outline-color: gainsboro;
+    border-color: gainsboro;
+    border-width: 1px;
+}
+
+.sign-up-form #row1 {
+    padding-bottom: 8px;
+}
+
+.sign-up-form #row2 {
+    padding-bottom: 8px;
+}
+
+#first {
+    padding-right: 8px;
+}
+
+#row2 input {
+    width: 95.5%;
+}
+
+#row3 button {
+    padding: 12px 43.1%;
+    white-space: nowrap;
+    background-color: rgb(10, 102, 194);
+    opacity: 90%;
+    border-color: rgb(10, 102, 194);
+    border-width: 1px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+#row3 button:hover {
+    opacity: 100%;
+}
+
+.request-a-ride-form {
+    width: 325px;
+}
+
+.request-a-ride-form #heading {
+    font-size: 200%;
+    font-family: Arial, sans-serif;
+}
+
+.request-a-ride-form input {
+    width: 100%;
+    padding: 12px;
+    border-color: gainsboro;
+    border-width: 1px;
+    outline: none;
+    border-style: solid;
+    background-color: gainsboro;
+}
+
+.request-a-ride-form #pickup, .request-a-ride-form #destination {
+    padding-bottom: 4px;
+}
+
+.request-a-ride-form #buttons {
+    padding-top: 32px;
+    padding-top: 32px;
+    
+}
+
+.request-a-ride-form button {
+    padding: 12px 16px;
+    outline: none;
+    border: 1px;
+}
+
+
+#first {
+    display: inline;
+    
+}
+
+.request-a-ride-form #request {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.request-a-ride-form #schedule {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}
+
+.request-a-ride-form #request:hover {
+    opacity: 90%;
+}
+
+.request-a-ride-form #schedule:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+#request, #schedule {
+    width: 48%;
+    margin: 0;
+}
