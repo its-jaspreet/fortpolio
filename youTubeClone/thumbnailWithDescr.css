@@ -1,0 +1,12 @@
+.video {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+}
+
+#hm {
+    background-color: aquamarine;
+    width: 100px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
