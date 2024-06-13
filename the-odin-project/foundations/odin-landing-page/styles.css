@@ -1,0 +1,53 @@
+#icon {
+    height: 20px;
+    width: 32px;
+}
+
+body {
+    background-color: beige;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #1F2937;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 12%;
+}
+
+header div {
+    display: flex;
+}
+
+#name {
+    align-items: center;
+    width: 16%;
+    font-size: 24px;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+#name p.name {
+    margin: 0;
+}
+
+#name .name a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+#header {
+    margin-right: 0;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 112%;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+#header p {
+    cursor: pointer;
+}
