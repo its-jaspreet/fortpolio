@@ -3,7 +3,7 @@
 ### 1. odin-recipes
 
 * **Description:** A web application showcasing recipes with visual appeal and organization. Utilizes HTML, CSS, Flexbox, and Grid for layout and styling.
-* **Live Website:** https://your-website-url.com
+* **Live Website:** https://its-jaspreet.github.io/fortpolio/the-odin-project/foundations/odin-recipes/
 * **Technologies:** HTML, CSS, Flexbox, Grid
 
 ### 2. odin-landing-page
