@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(32, 32, 32);
+    color: rgb(224, 224, 224);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#display {
+    margin-top: 2%;
+}
+
+body>div {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 2%;
+}
+
+div button, div div {
+    border: 1px solid lavender;
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    color: rgb(224, 224, 224);
+}
+
+#input {
+    height: 12px;
+}
+
+#answer {
+    height: 44px;
+}
+
+div button {
+    cursor: pointer;
+    height: 100%;
+}
+
+div button:hover {
+    color: rgb(32, 32, 32);
+    background-color: rgb(224, 224, 224);
+    transition: 0.2s;
+}
+
+div button:focus {
+    background-color: rgb(224, 224, 224, 0.25);
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
