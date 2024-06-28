@@ -1,0 +1,296 @@
+:root {
+    --dark-color: #A08F7B;
+    --light-color: #BBB1A5;
+    --lightTransparent-color: rgb(187, 177, 165, 32%);
+    --text-color: #555E6B;
+    --green-color: #14AE5C;
+    --blue-color: #007AFF;
+    --red-color: #FF3B30;
+  }
+
+body {
+    margin: 32px;
+    padding: 32px;
+    border: 1px solid #BBB1A5;
+}
+
+h1 {
+    width: 100%;
+    font-size: 3.5vw;
+    color: var(--dark-color);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#tagline {
+    font-size: 2.2vw;
+    color: var(--light-color);
+    margin-top: 0;  
+}
+
+#footnote {
+    margin-top: 32px;
+    font-size: 1vw;
+    color: var(--light-color);
+}
+
+#footnote a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+#footnote a:hover {
+    color: var(--light-color);
+    text-decoration: underline;
+    color: var(--light-color)
+}
+
+.serif {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;      
+}
+
+.mono {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main-add-button {
+    font-size: 120%;
+    width: 100%;
+    background-color: var(--green-color);
+    color: white;
+    border: none;
+    padding: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#main-add-button:hover {
+    background-color: #10a355;
+}
+
+#dialog-box-add {
+    margin: 21px 0;
+    padding: 1px 0;
+}
+
+#dialog-box-add div {
+    margin: 12px 28px;
+    padding: 0;
+    color: var(--text-color);
+}
+
+#dialog-box-add div label {
+    font-size: 1vw;
+}
+
+#dialog-box-add div input#title, #dialog-box-add div input#name {
+    width: 96%;
+    padding: 4px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--light-color);
+}
+
+#dialog-box-add div input#title:hover, #dialog-box-add div input#name:hover {
+    background-color: var(--lightTransparent-color);
+}
+
+#dialog-box-add div input#title:focus, #dialog-box-add div input#name:focus {
+    border: none;
+    background-color: white;
+}
+
+#dialog-box-update {
+    margin: 21px 0;
+    padding: 1px 0;
+}
+
+#dialog-box-update div {
+    margin: 12px 28px;
+    padding: 0;
+    color: var(--text-color);
+}
+
+#dialog-box-update div label {
+    font-size: 1vw;
+}
+
+#dialog-box-update div input#title-update, #dialog-box-update div input#name-update {
+    width: 96%;
+    padding: 4px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--light-color);
+}
+
+#dialog-box-update div input#title-update:hover, #dialog-box-update div input#name-update:hover {
+    background-color: var(--lightTransparent-color);
+}
+
+#dialog-box-update div input#title-update:focus, #dialog-box-update div input#name-update:focus {
+    border: none;
+    background-color: white;
+}
+
+#dialog-box-update div label.mono, #dialog-box-add div label.mono {
+    cursor: pointer;
+}
+
+#dialog-box-add div button, #dialog-box-update div button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 16px;
+    border-radius: 4px;
+}
+
+#add {
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+    width: 100%;
+}
+
+#add:hover {
+    color: white;
+    border: 1px solid var(--green-color);
+    background-color: var(--green-color);
+}
+
+#update {
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    width: 100%;
+}
+
+#update:hover {
+    color: white;
+    border: 1px solid var(--blue-color);
+    background-color: var(--blue-color);
+}
+
+#dialog-box-add #row2, #dialog-box-update #row2 {
+    margin: 8px 0;
+}
+
+#row2 button {
+    margin-bottom: 16px;
+}
+
+#dialog-box-add #row2 button, #dialog-box-update #row2 button{
+    width: 48%;
+}
+
+#reset {
+    margin-right: 4px;
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
+#reset:hover {
+    color: white;
+    border: 1px solid var(--blue-color);
+    background-color: var(--blue-color);
+}
+
+#delete {
+    margin-right: 4px;
+    color: var(--red-color);
+    border: 1px solid var(--red-color);
+}
+
+#delete:hover {
+    color: white;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+}
+
+#dismiss-add, #dismiss-update {
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+}
+
+#dismiss-add:hover, #dismiss-update:hover {
+    color: white;
+    border: 1px solid var(--dark-color);
+    background-color: var(--dark-color);
+}
+
+.row1 {
+    margin-top: 8px;
+}
+
+#outer {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    align-items: center;
+}
+
+#columns {
+    display: grid;
+    width: 100%;
+    min-width: 880px;
+    height: fit-content;
+    min-height: 320px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    overflow-x: auto;
+}
+
+#dialog-box {
+    height: 160px;
+    width: 100%;
+}
+
+#panel {
+    width: 28%;
+    min-width: 250px;
+    height: fit-content;
+}
+
+.column {
+    background-color: rgb(187,177,165,32%);
+}
+
+.closed {
+    display: none;
+}
+
+h2 {
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+ul {
+    margin: 0 32px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+li button {
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 4px 0;
+}
+
+li button:hover {
+    border: 1px solid var(--light-color);
+    background-color: var(--lightTransparent-color);
+}
+
+li button:focus {
+    background-color: white;
+    border: none;
+}

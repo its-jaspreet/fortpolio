@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark: Your Personal Library</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap');
+    </style>
+    <link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="outer">
+
+        <div id="panel">
+            <div>
+                <h1 class="serif">BOOKMARK</h1>
+                <p class="mono" id="tagline">Your Personal Library</p>
+            </div>
+
+            <button class="serif" id="main-add-button">Add New Book</button>
+
+            <div class="column closed" id="dialog-box-add">
+                <h2 class="serif">NEW BOOK</h2>
+                <div>
+                    <label class="serif" for="title">Book's Title:</label><br>
+                    <input id="title" class="mono" placeholder="Enter title here">
+                    <p class="closed" id="error-title">This is required. Please enter the title.</p>
+                </div>
+                <div>
+                    <label class="serif" for="name">Author's Name:</label><br>
+                    <input id="name" class="mono" placeholder="Enter name here">
+                </div>
+                <div>
+                    <label class="serif" for="status">Select Status:</label><br>
+                    <input type="radio" id="option1" name="status" value="to-be-read" checked>
+                    <label class="mono" for="option1">To Be Read</label><br>
+
+                    <input type="radio" id="option2" name="status" value="currently-reading">
+                    <label class="mono" for="option2">Currently Reading</label><br>
+
+                    <input type="radio" id="option3" name="status" value="finished-reading">
+                    <label class="mono" for="option3">Finished Reading</label><br>
+                    <p class="closed" id="error-status">This is required. Please select an option.</p>
+                </div>
+
+                <div>
+                    <button class="serif row1" id="add">Add</button>
+                    <div id="row2">
+                        <button class="serif" id="reset">Reset</button>
+                        <button class="serif" id="dismiss-add">Dismiss</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column closed" id="dialog-box-update">
+                <h2 class="serif">SELECTED BOOK</h2>
+                <div>
+                    <label class="serif" for="title">Book's Title:</label><br>
+                    <input id="title-update" class="mono" placeholder="Enter title here">
+                    <p class="closed" id="error-title">This is required. Please enter the title.</p>
+                </div>
+                <div>
+                    <label class="serif" for="name">Author's Name:</label><br>
+                    <input id="name-update" class="mono" placeholder="Enter name here">
+                </div>
+                <div>
+                    <label class="serif" for="status">Select Status:</label><br>
+                    <input type="radio" id="option1" name="status-update" value="to-be-read">
+                    <label class="mono" for="option1">To Be Read</label><br>
+
+                    <input type="radio" id="option2" name="status-update" value="currently-reading">
+                    <label class="mono" for="option2">Currently Reading</label><br>
+
+                    <input type="radio" id="option3" name="status-update" value="finished-reading">
+                    <label class="mono" for="option3">Finished Reading</label><br>
+                    <p class="closed" id="error-status">This is required. Please select an option.</p>
+                </div>
+
+                <div>
+                    <button class="serif row1" id="update">Update</button>
+                    <div id="row2">
+                        <button class="serif" id="delete">Delete</button>
+                        <button class="serif" id="dismiss-update">Dismiss</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <p class="serif" id="footnote">Project based on&nbsp;<a href="https://www.theodinproject.com/lessons/foundations-recipes" target="_blank">The Odin Project</a>.
+                <br>Coded by&nbsp;<a href="https://github.com/its-jaspreet" target="_blank">its-jaspreet</a>.</p>
+            </div>
+        </div>
+
+        <div id="columns">
+            <div class="column">
+                <h2 class="serif">TO BE READ</h2>
+                <div>
+                    <ul class="mono books" id="to-be-read">
+                        <li><button class="mono book" id="book-2">Rebecca</button></li>
+                        <li><button class="mono book" id="book-4">Letters to Milena</button></li>
+                        <li><button class="mono book" id="book-6">Freakonomics</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="serif">CURRENTLY READING</h2>
+                <div>
+                    <ul class="mono books" id="currently-reading">
+                        <li><button class="mono book" id="book-5">Angels and Demons</button></li>
+                        <li><button class="mono book" id="book-3">Atomic Habits</button></li>
+                        <li><button class="mono book" id="book-7">The Invisible Life of Addie LaRue</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="serif">FINISHED READING</h2>
+                <div>
+                    <ul class="mono books" id="finished-reading">
+                        <li><button class="mono book" id="book-8">Heartstopper</button></li>
+                        <li><button class="mono book" id="book-9">The Seven Husbands of Evelyn Hugo</button></li>
+                        <li><button class="mono book" id="book-1">Persuasion</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
