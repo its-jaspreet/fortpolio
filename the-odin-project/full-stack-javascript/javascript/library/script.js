@@ -1,8 +1,9 @@
-// const welcomeMsg = `Heyo! Welcome to Bookmark: Your Personal Library.
-// You can add books that you want to read, are currently reading or have finished reading! 
-// A few books have already been added. Feel free to delete these sample entries. Happy Reading ;)
-// `
-// alert(welcomeMsg);
+const welcomeMsg = `Heyo, welcome to Bookmark!
+
+This is your personal library! You can add books that you want to read, are currently reading or have finished reading! 
+
+A few books have already been added. Feel free to delete these sample entries. Happy Reading ;)`
+alert(welcomeMsg);
 
 const mainAddNew = document.querySelector("#main-add-button");
 const dialogBoxAdd = document.querySelector("#dialog-box-add");
