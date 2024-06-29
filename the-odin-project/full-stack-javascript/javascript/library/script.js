@@ -11,7 +11,7 @@ const TBR = document.querySelector("#to-be-read");
 const CR = document.querySelector("#currently-reading");
 const FR = document.querySelector("#finished-reading");
 
-let idValue = 0;
+let idValue = 9;
 
 const library = [
     {
