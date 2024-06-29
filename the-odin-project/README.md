@@ -5,11 +5,11 @@ This repository is a collection of projects I completed while following The Odin
 
 The projects are organized into folders reflecting the curriculum's structure:
 
- 1. **foundations:** Contains projects from the Foundations section of the course.
+ 1. **[foundations](https://its-jaspreet.github.io/fortpolio/the-odin-project/foundations):** Contains projects from the Foundations section of the course.
 
- 2. **full-stack-javascript:** Contains projects from the Full Stack JavaScript path
+ 2. **[full-stack-javascript](https://github.com/its-jaspreet/fortpolio/tree/main/the-odin-project/full-stack-javascript):** Contains projects from the Full Stack JavaScript path
 	* **intermediate-html-css:** Sub-folder for projects from the intermediate HTML and CSS section of the course.
-	* **javascript:** Sub-folder for projects from the JavaScript section of the course.
+	* **[javascript](https://github.com/its-jaspreet/fortpolio/tree/main/the-odin-project/full-stack-javascript/javascript):** Sub-folder for projects from the JavaScript section of the course.
 
 Each project will have its own sub-folder with relevant files (HTML, CSS, JavaScript, etc.).
 
