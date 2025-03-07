@@ -2,20 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
   </style>
 </head>
 <body>
+  <h1 id="title">Doctor Consultation Request</h1>
+  <p id="description">Fill out the form below to request an appointment with a healthcare professional.</p>
+  
+  <form id="survey-form">
+      <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name" id="name-label">Full Name:
+              <input id="name" type="text" name="name" placeholder="Enter full name" required>
+          </label>
+          <br>
+          <label for="email" id="email-label">Email Address:
+              <input id="email" type="email" name="email" placeholder="Enter email" required>
+          </label>
+          <br>
+          <label for="number" id="number-label">Phone Number:
+              <input id="number" type="number" name="number" min="1000000000" max="9999999999" placeholder="10-digits" required>
+          </label>
+          <br>
+          <label for="dob">Date of Birth:
+              <input id="dob" type="date" name="dob" required>
+          </label>
+      </fieldset>
 
+      <fieldset>
+          <legend>Preferred Consultation Type:</legend>
+          <label for="online">
+              <input id="online" type="radio" name="consultation-type" value="online" required> Online
+          </label>
+          <br>
+          <label for="in-person">
+              <input id="in-person" type="radio" name="consultation-type" value="in-person" required> In-Person
+          </label>
+      </fieldset>
+
+      <fieldset>
+          <legend>Additional Preferences:</legend>
+          <label for="pregnancy-care">
+              <input id="pregnancy-care" type="checkbox" name="preference" value="pregnancy-care"> Pregnancy Care
+          </label>
+          <br>
+          <label for="postpartum-care">
+              <input id="postpartum-care" type="checkbox" name="preference" value="postpartum-care"> Postpartum Care
+          </label>
+      </fieldset>
+
+      <fieldset>
+          <label for="dropdown">Select a Doctor's Specialty:
+              <select id="dropdown">
+                  <option value="general">General Physician</option>
+                  <option value="gynecologist">Gynecologist</option>
+              </select>
+          </label>
+      </fieldset>
+
+      <fieldset>
+          <label for="query">Describe Your Query:
+              <textarea id="query" name="query" rows="4" cols="40" placeholder="Briefly explain your concerns..." required></textarea>
+          </label>
+      </fieldset>
+
+      <label for="terms">
+          <input id="terms" type="checkbox" required value="terms"> I accept the <a href="#">terms and conditions</a>.
+      </label>
+      <br>
+      <input id="submit" type="submit" value="Submit Request">
+  </form>
+<!--
   Contact Us
 
   First Name
@@ -48,5 +112,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+-->
 </body>
 </html>
